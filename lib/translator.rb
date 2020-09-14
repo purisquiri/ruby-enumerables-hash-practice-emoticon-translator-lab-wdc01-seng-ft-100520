@@ -16,7 +16,7 @@ def load_library(file_path)
  end
   
 
-def get_japanese_emoticon(file_path, emoticon)
+def get_japanese_emoticon(file_path, "")
   updated_hash = load_library(file_path)
   binding.pry
   updated_hash.each do |word, emoticon_hash|
