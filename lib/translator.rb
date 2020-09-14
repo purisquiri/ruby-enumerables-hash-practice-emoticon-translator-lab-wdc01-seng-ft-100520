@@ -22,7 +22,7 @@ def get_japanese_emoticon(file_path, emoticon)
   
   updated_hash.each do |emoticon_obj|
     binding.pry
-    if updated_hash.values[0].values[1] == emoticon
+    if emoticon_obj == emoticon
       
       return updated_hash.values[0].values[0]
     else
