@@ -18,7 +18,7 @@ def load_library(file_path)
 
 def get_japanese_emoticon(file_path, emoticon)
   updated_hash = load_library(file_path)
-  #binding.pry
+  binding.pry
   updated_hash.each do |word, emoticon|
     #if updated_hash.values[0].values[1] == emoticon
     if updated_hash.keys.values_at[:japanese] == emoticon
