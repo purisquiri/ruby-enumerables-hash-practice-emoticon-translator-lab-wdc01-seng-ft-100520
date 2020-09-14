@@ -21,10 +21,10 @@ def get_japanese_emoticon(file_path, emoticon)
   updated_hash = load_library(file_path)
   
   updated_hash.each do |emoticon_obj|
-    #binding.pry
+    binding.pry
     if emoticon_obj[1][:english] == emoticon
       return emoticon_obj[1][:japanese]
-    binding.pry
+    #binding.pry
     else
       return "Sorry, that emoticon was not found"  
     end
