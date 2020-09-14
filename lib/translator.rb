@@ -19,9 +19,11 @@ def load_library(file_path)
 def get_japanese_emoticon(file_path, emoticon)
   update_hash = load_library(file_path)
   #binding.pry
+  emoticon_found = ""
   update_hash.each do |emoticon|
-    if update_hash.values[0].values[1] == emoticon
-      puts update_hash.values[0].values[0]
+    if emoticon == update_hash.values[0].values[1] 
+      emoticon_found =  update_hash.values[0].values[0]
+      puts emoticon_found
     else
       puts "Sorry, that emoticon was not found"
     end
