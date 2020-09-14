@@ -17,10 +17,11 @@ def load_library(file_path)
   
 
 def get_japanese_emoticon(file_path, emoticon)
+  #binding.pry
   updated_hash = load_library(file_path)
   
   updated_hash.each do |emoticon|
-    binding.pry
+    #binding.pry
     if updated_hash.values[0].values[1] == emoticon
       
       return updated_hash.values[0].values[0]
