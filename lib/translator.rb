@@ -16,20 +16,16 @@ def get_english_meaning(file_path, emoticon)
   load_library(file_path).each do |key, value|
     if value[:japanese] == emoticon
       return key
-    return "Sorry, that emoticon was not found"
     end
   end
+  return "Sorry, that emoticon was not found"
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  load_library(file_path)
-  updated_hash.values.each do |emoticon_obj|
-    binding.pry
+  load_library(file_path).each do |emoticon_obj|
     if emoticon_obj[:english] == emoticon
       return emoticon_obj[:japanese]
-    #binding.pry
-    else
-      return "Sorry, that emoticon was not found"  
     end
   end
+  return "Sorry, that emoticon was not found" 
 end
