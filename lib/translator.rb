@@ -18,11 +18,11 @@ def load_library(file_path)
 def get_english_meaning(file_path, emoticon)
   load_library(file_path).each do |key, value|
     binding.pry
-    if 
+    # if 
     
-    else
-      return "Sorry, that emoticon was not found"  
-    end
+    # else
+    #   return "Sorry, that emoticon was not found"  
+    # end
   end
 end
 
