@@ -22,12 +22,8 @@ def get_english_meaning(file_path, emoticon)
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  
-  load_library(file_path).each do |emoticon_obj|
-    if emoticon_obj[:english] == emoticon
-      return emoticon_obj[:japanese]
-      binding.pry
-    end
+  load_library(file_path).each do |key, value|
+    binding.pry
   end
   return "Sorry, that emoticon was not found" 
 end
