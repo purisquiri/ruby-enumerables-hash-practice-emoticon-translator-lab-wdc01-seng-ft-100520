@@ -17,17 +17,18 @@ def load_library(file_path)
   
 
 def get_japanese_emoticon(file_path, emoticon)
-  update_hash = load_library(file_path)
+  updated_hash = load_library(file_path)
   #binding.pry
-  emoticon_found = ""
-  update_hash.each do |emoticon|
-    # #if emoticon == update_hash.values[0].values[1] 
-    #   emoticon_found =  update_hash.values[0].values[0]
-    #   puts emoticon_found
-    # else
-    #   puts "Sorry, that emoticon was not found"
-    end
-  end  
+  # emoticon_found = ""
+  # updated_hash.each do |emoticon|
+  #   if emoticon == updated_hash.values[0].values[1] 
+  #     emoticon_found =  updated_hash.values[0].values[0]
+  #     puts emoticon_found
+  #   else
+  #     puts "Sorry, that emoticon was not found"
+  #   end
+  # end  
+  if updated_hash.has_va
 end
 
 def get_english_meaning
