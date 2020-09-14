@@ -21,8 +21,8 @@ def get_japanese_emoticon(file_path, emoticon)
   binding.pry
   updated_hash.each do |word, emoticon|
     #if updated_hash.values[0].values[1] == emoticon
-    if updated_hash.keys.values_at[:japanese] == emoticon
-    puts updated_hash.keys.values_at[:english]
+    if updated_hash.keys.values[:japanese] == emoticon
+    puts updated_hash.keys.values[:english]
     else
     puts "Sorry, that emoticon was not found"  
     end
