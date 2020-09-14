@@ -20,6 +20,7 @@ def get_japanese_emoticon(file_path, emoticon)
   updated_hash = load_library(file_path)
   #binding.pry
   updated_hash.each do |word, emoticon|
+    #if updated_hash.values[0].values[1]
     if updated_hash[word][:japanese] == emoticon
     puts updated_hash[word][:english]
     else
