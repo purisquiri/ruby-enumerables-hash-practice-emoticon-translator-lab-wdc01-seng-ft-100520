@@ -21,11 +21,11 @@ def get_japanese_emoticon(file_path, emoticon)
   #binding.pry
   emoticon_found = ""
   update_hash.each do |emoticon|
-    if emoticon == update_hash.values[0].values[1] 
-      emoticon_found =  update_hash.values[0].values[0]
-      puts emoticon_found
-    else
-      puts "Sorry, that emoticon was not found"
+    # #if emoticon == update_hash.values[0].values[1] 
+    #   emoticon_found =  update_hash.values[0].values[0]
+    #   puts emoticon_found
+    # else
+    #   puts "Sorry, that emoticon was not found"
     end
   end  
 end
